@@ -1,5 +1,4 @@
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
 import MenuSection from "@/components/MenuSection";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
@@ -7,9 +6,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-card/30">
       <HeroSection />
-      <AboutSection />
       <MenuSection />
       <GallerySection />
       <ContactSection />
