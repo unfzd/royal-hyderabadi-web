@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       {/* Elegant Food Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
         style={{ backgroundImage: `url(/lovable-uploads/ab0c0fb8-9f44-4919-8a2f-1f7814aa6436.png)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/80"></div>
@@ -39,7 +39,7 @@ const HeroSection = () => {
         <div className="mb-16 space-y-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold text-transparent bg-gradient-royal bg-clip-text leading-tight tracking-tight">
-              Premium Menu
+              Menu
             </h1>
             <div className="flex items-center justify-center gap-6">
               <div className="h-[2px] bg-gradient-saffron flex-1 max-w-32 rounded-full"></div>
