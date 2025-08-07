@@ -43,7 +43,7 @@ const HeroSection = () => {
           <img 
             src="/lovable-uploads/79b5061e-fc8a-4ac9-bb2e-4f90dbb714fe.png" 
             alt="IBR - Indian Biryani Restaurant Logo" 
-            className="mx-auto max-w-60 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+            className="mx-auto max-w-64 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
           />
         </div>
 
