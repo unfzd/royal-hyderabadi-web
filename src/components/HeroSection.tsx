@@ -10,34 +10,10 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{ backgroundImage: `url(/lovable-uploads/ab0c0fb8-9f44-4919-8a2f-1f7814aa6436.png)` }}
       >
         <div className="absolute inset-0 bg-gradient-hero"></div>
-      </div>
-
-      {/* Food Background Images with Low Opacity */}
-      <div className="absolute inset-0">
-        <div 
-          className="absolute top-20 left-10 w-40 h-40 bg-cover bg-center rounded-full opacity-10 blur-sm"
-          style={{ backgroundImage: `url(/lovable-uploads/c80a857c-516f-4492-a49b-7ad76009bf29.png)` }}
-        ></div>
-        <div 
-          className="absolute bottom-32 right-20 w-32 h-32 bg-cover bg-center rounded-full opacity-15 blur-sm"
-          style={{ backgroundImage: `url(/lovable-uploads/fdb18bab-5c2f-4fc3-aecb-88761acedb1c.png)` }}
-        ></div>
-        <div 
-          className="absolute top-1/3 right-1/4 w-48 h-48 bg-cover bg-center rounded-full opacity-8 blur-sm"
-          style={{ backgroundImage: `url(/lovable-uploads/a066fb6c-ae74-4e14-83ae-a4a85ac655de.png)` }}
-        ></div>
-        <div 
-          className="absolute bottom-1/4 left-1/4 w-36 h-36 bg-cover bg-center rounded-full opacity-12 blur-sm"
-          style={{ backgroundImage: `url(/lovable-uploads/14a0b7d5-7f02-4c5c-85a1-2b21bfa77d53.png)` }}
-        ></div>
-        <div 
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 bg-cover bg-center rounded-full opacity-6 blur-sm"
-          style={{ backgroundImage: `url(/lovable-uploads/ab0c0fb8-9f44-4919-8a2f-1f7814aa6436.png)` }}
-        ></div>
       </div>
 
       {/* Content */}
