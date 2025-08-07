@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const MenuSection = () => {
   const menuData = {
@@ -85,22 +83,17 @@ const MenuSection = () => {
           <div className="w-24 h-1 bg-gradient-saffron mx-auto rounded-full"></div>
         </div>
 
-        <Tabs defaultValue="biryani" className="w-full">
-          <TabsList className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2 mb-12 bg-card/30 backdrop-blur-sm p-2 rounded-lg h-auto">
-            {categories.map((category) => (
-              <TabsTrigger
-                key={category.id}
-                value={category.id}
-                className="flex flex-col gap-1 p-3 text-xs font-poppins data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all duration-300 hover:bg-primary/20"
-              >
-                <span className="text-lg">{category.icon}</span>
-                <span className="hidden sm:block">{category.label}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
+        <div className="space-y-16">
           {categories.map((category) => (
-            <TabsContent key={category.id} value={category.id}>
+            <div key={category.id} className="space-y-8">
+              <div className="text-center">
+                <h3 className="text-3xl md:text-4xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text mb-2 flex items-center justify-center gap-3">
+                  <span className="text-4xl">{category.icon}</span>
+                  {category.label}
+                </h3>
+                <div className="w-16 h-0.5 bg-gradient-saffron mx-auto rounded-full"></div>
+              </div>
+              
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menuData[category.id as keyof typeof menuData]?.map((item, index) => (
                   <Card 
@@ -121,9 +114,9 @@ const MenuSection = () => {
                   </Card>
                 ))}
               </div>
-            </TabsContent>
+            </div>
           ))}
-        </Tabs>
+        </div>
 
         <div className="text-center mt-12">
           <Card className="inline-block p-4 bg-card/20 backdrop-blur-sm border-mint/30">
