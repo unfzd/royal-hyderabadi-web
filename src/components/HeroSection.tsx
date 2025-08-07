@@ -21,7 +21,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 animate-fade-in">
           <img 
-            src="/lovable-uploads/723409d3-c710-4373-a1f5-04e053249215.png" 
+            src="/src/assets/ibr-logo-maroon.png" 
             alt="IBR - Indian Biryani Restaurant Logo" 
             className="mx-auto max-w-md w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
           />
@@ -41,7 +41,7 @@ const HeroSection = () => {
         {/* Locations */}
         <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <p className="text-xl md:text-2xl font-poppins font-medium text-saffron">
-            📍 Sydney | Newcastle
+            📍 Newcastle
           </p>
         </div>
 

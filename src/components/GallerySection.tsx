@@ -6,24 +6,34 @@ import breads from "@/assets/breads.jpg";
 const GallerySection = () => {
   const galleryItems = [
     {
-      image: biryani1,
-      title: "Signature Hyderabadi Biryani",
-      description: "Aromatic basmati rice with tender chicken, cooked to perfection"
+      image: "/lovable-uploads/fdb18bab-5c2f-4fc3-aecb-88761acedb1c.png",
+      title: "Tandoori Delights",
+      description: "Fresh naan and chicken tikka with authentic spices"
     },
     {
-      image: curries,
-      title: "Premium Curry Collection",
-      description: "Rich, flavorful curries made with authentic spices"
+      image: "/lovable-uploads/c80a857c-516f-4492-a49b-7ad76009bf29.png",
+      title: "Signature Chicken Biryani",
+      description: "Aromatic basmati rice with tender chicken pieces"
     },
     {
-      image: breads,
-      title: "Fresh Tandoor Breads",
-      description: "Soft naan and rotis baked fresh in our tandoor"
+      image: "/lovable-uploads/a066fb6c-ae74-4e14-83ae-a4a85ac655de.png",
+      title: "Complete Indian Feast",
+      description: "Biryani, curry, and tandoori specialties"
     },
     {
-      image: biryani1,
-      title: "Royal Feast",
-      description: "Experience the royal dining tradition of Hyderabad"
+      image: "/lovable-uploads/940a82a1-0966-4bd0-b254-9894d6e15f81.png",
+      title: "Traditional Curry",
+      description: "Rich, flavorful curry made with authentic spices"
+    },
+    {
+      image: "/lovable-uploads/14a0b7d5-7f02-4c5c-85a1-2b21bfa77d53.png",
+      title: "Chicken 65 Special",
+      description: "Spicy deep-fried chicken with curry leaves"
+    },
+    {
+      image: "/lovable-uploads/e010e28a-23f3-4b8a-b1fc-3f9904dcefc3.png",
+      title: "Royal Dining Experience",
+      description: "Complete meal with biryani, curry, and fresh bread"
     }
   ];
 

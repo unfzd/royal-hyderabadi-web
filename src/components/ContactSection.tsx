@@ -22,9 +22,6 @@ const ContactSection = () => {
             <div className="text-center">
               <Phone className="w-12 h-12 text-mint mx-auto mb-4" />
               <h3 className="font-poppins font-semibold text-lg mb-3">Call Now</h3>
-              <Button variant="glass" className="w-full mb-2" asChild>
-                <a href="tel:+61234567890">📞 Call Sydney</a>
-              </Button>
               <Button variant="glass" className="w-full" asChild>
                 <a href="tel:+61234567891">📞 Call Newcastle</a>
               </Button>
@@ -35,11 +32,6 @@ const ContactSection = () => {
             <div className="text-center">
               <MessageCircle className="w-12 h-12 text-saffron mx-auto mb-4" />
               <h3 className="font-poppins font-semibold text-lg mb-3">WhatsApp Order</h3>
-              <Button variant="premium" className="w-full mb-2" asChild>
-                <a href="https://wa.me/61234567890" target="_blank" rel="noopener noreferrer">
-                  💬 WhatsApp Sydney
-                </a>
-              </Button>
               <Button variant="premium" className="w-full" asChild>
                 <a href="https://wa.me/61234567891" target="_blank" rel="noopener noreferrer">
                   💬 WhatsApp Newcastle
@@ -63,38 +55,7 @@ const ContactSection = () => {
         </div>
 
         {/* Locations */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Sydney Location */}
-          <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20">
-            <div className="flex items-start gap-4 mb-6">
-              <MapPin className="w-8 h-8 text-saffron flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-playfair font-bold text-2xl text-saffron mb-2">Sydney</h3>
-                <p className="text-foreground/80 font-poppins leading-relaxed">
-                  123 George Street<br />
-                  Sydney NSW 2000<br />
-                  Australia
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 mb-6">
-              <Clock className="w-8 h-8 text-mint flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-poppins font-semibold text-mint mb-2">Opening Hours</h4>
-                <div className="text-foreground/80 font-poppins text-sm space-y-1">
-                  <p>Monday - Thursday: 11:00 AM - 9:30 PM</p>
-                  <p>Friday - Sunday: 11:00 AM - 10:00 PM</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Map placeholder */}
-            <div className="bg-muted/50 rounded-lg h-48 flex items-center justify-center border border-primary/20">
-              <p className="text-foreground/60 font-poppins">Sydney Location Map</p>
-            </div>
-          </Card>
-
+        <div className="grid md:grid-cols-1 gap-8 mb-12 max-w-2xl mx-auto">
           {/* Newcastle Location */}
           <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4 mb-6">
@@ -131,13 +92,10 @@ const ContactSection = () => {
         <Card className="p-8 bg-gradient-royal text-center shadow-card">
           <h3 className="font-playfair font-bold text-2xl mb-4">Ready to Order?</h3>
           <p className="text-foreground/90 font-poppins mb-6 max-w-2xl mx-auto">
-            Experience the authentic taste of Hyderabad. Call us now or visit our restaurants for the best biryani in Sydney and Newcastle!
+            Experience the authentic taste of Hyderabad. Call us now or visit our restaurant for the best biryani in Newcastle!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button variant="premium" size="lg" asChild>
-              <a href="tel:+61234567890">📞 Call Sydney Now</a>
-            </Button>
-            <Button variant="glass" size="lg" asChild>
               <a href="tel:+61234567891">📞 Call Newcastle Now</a>
             </Button>
           </div>
