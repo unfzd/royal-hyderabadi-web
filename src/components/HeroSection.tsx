@@ -16,23 +16,48 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>
 
+      {/* Food Background Images with Low Opacity */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute top-20 left-10 w-40 h-40 bg-cover bg-center rounded-full opacity-10 blur-sm"
+          style={{ backgroundImage: `url(/lovable-uploads/c80a857c-516f-4492-a49b-7ad76009bf29.png)` }}
+        ></div>
+        <div 
+          className="absolute bottom-32 right-20 w-32 h-32 bg-cover bg-center rounded-full opacity-15 blur-sm"
+          style={{ backgroundImage: `url(/lovable-uploads/fdb18bab-5c2f-4fc3-aecb-88761acedb1c.png)` }}
+        ></div>
+        <div 
+          className="absolute top-1/3 right-1/4 w-48 h-48 bg-cover bg-center rounded-full opacity-8 blur-sm"
+          style={{ backgroundImage: `url(/lovable-uploads/a066fb6c-ae74-4e14-83ae-a4a85ac655de.png)` }}
+        ></div>
+        <div 
+          className="absolute bottom-1/4 left-1/4 w-36 h-36 bg-cover bg-center rounded-full opacity-12 blur-sm"
+          style={{ backgroundImage: `url(/lovable-uploads/14a0b7d5-7f02-4c5c-85a1-2b21bfa77d53.png)` }}
+        ></div>
+      </div>
+
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         {/* Logo */}
         <div className="mb-8 animate-fade-in">
           <img 
-            src="/src/assets/ibr-logo-maroon.png" 
+            src="/lovable-uploads/791de8db-0134-48a0-a92b-bf5f6e7a5531.png" 
             alt="IBR - Indian Biryani Restaurant Logo" 
-            className="mx-auto max-w-md w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+            className="mx-auto max-w-sm w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
           />
         </div>
 
         {/* Tagline */}
         <div className="mb-8 space-y-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-transparent bg-gradient-royal bg-clip-text leading-tight">
             Authentic Hyderabadi Cuisine
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 font-poppins max-w-2xl mx-auto">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="h-px bg-gradient-saffron flex-1 max-w-24"></div>
+            <span className="text-2xl">👑</span>
+            <div className="h-px bg-gradient-saffron flex-1 max-w-24"></div>
+          </div>
+          <p className="text-lg md:text-xl text-foreground/90 font-poppins max-w-2xl mx-auto">
             Experience the royal flavors of Hyderabad with our 100% Halal certified dishes, 
             served with tradition and passion since 2019
           </p>
