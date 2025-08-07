@@ -34,6 +34,10 @@ const HeroSection = () => {
           className="absolute bottom-1/4 left-1/4 w-36 h-36 bg-cover bg-center rounded-full opacity-12 blur-sm"
           style={{ backgroundImage: `url(/lovable-uploads/14a0b7d5-7f02-4c5c-85a1-2b21bfa77d53.png)` }}
         ></div>
+        <div 
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-56 bg-cover bg-center rounded-full opacity-6 blur-sm"
+          style={{ backgroundImage: `url(/lovable-uploads/ab0c0fb8-9f44-4919-8a2f-1f7814aa6436.png)` }}
+        ></div>
       </div>
 
       {/* Content */}
