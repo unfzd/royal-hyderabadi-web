@@ -23,8 +23,11 @@ const ContactSection = () => {
             <div className="text-center">
               <Phone className="w-12 h-12 text-mint mx-auto mb-4" />
               <h3 className="font-poppins font-semibold text-lg mb-3">Call Now</h3>
+              <Button variant="glass" className="w-full mb-2" asChild>
+                <a href="tel:+61240746151">📞 Call Newcastle</a>
+              </Button>
               <Button variant="glass" className="w-full" asChild>
-                <a href="tel:+61234567891">📞 Call Newcastle</a>
+                <a href="tel:+61289714208">📞 Call Sydney</a>
               </Button>
             </div>
           </Card>
@@ -33,9 +36,14 @@ const ContactSection = () => {
             <div className="text-center">
               <MessageCircle className="w-12 h-12 text-saffron mx-auto mb-4" />
               <h3 className="font-poppins font-semibold text-lg mb-3">WhatsApp Order</h3>
-              <Button variant="premium" className="w-full" asChild>
-                <a href="https://wa.me/61234567891" target="_blank" rel="noopener noreferrer">
+              <Button variant="premium" className="w-full mb-2" asChild>
+                <a href="https://wa.me/61240746151" target="_blank" rel="noopener noreferrer">
                   💬 WhatsApp Newcastle
+                </a>
+              </Button>
+              <Button variant="premium" className="w-full" asChild>
+                <a href="https://wa.me/61289714208" target="_blank" rel="noopener noreferrer">
+                  💬 WhatsApp Sydney
                 </a>
               </Button>
             </div>
@@ -94,8 +102,11 @@ const ContactSection = () => {
             Experience the authentic taste of Hyderabad. Call us now or visit our restaurant for the best biryani in Newcastle!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Button variant="premium" size="lg" className="mr-2" asChild>
+              <a href="tel:+61240746151">📞 Call Newcastle</a>
+            </Button>
             <Button variant="premium" size="lg" asChild>
-              <a href="tel:+61234567891">📞 Call Newcastle Now</a>
+              <a href="tel:+61289714208">📞 Call Sydney</a>
             </Button>
           </div>
         </Card>
