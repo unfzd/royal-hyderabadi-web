@@ -41,7 +41,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 animate-fade-in">
           <img 
-            src="/lovable-uploads/ef5bf3b4-5192-4e25-b3e3-a3bdefcc5c36.png" 
+            src="/lovable-uploads/79b5061e-fc8a-4ac9-bb2e-4f90dbb714fe.png" 
             alt="IBR - Indian Biryani Restaurant Logo" 
             className="mx-auto max-w-md w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
           />
