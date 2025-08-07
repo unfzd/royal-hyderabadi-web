@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, MessageCircle, MapPin, Clock, Star } from "lucide-react";
+import RestaurantMap from "./RestaurantMap";
 
 const ContactSection = () => {
   return (
@@ -81,10 +82,8 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="bg-muted/50 rounded-lg h-48 flex items-center justify-center border border-primary/20">
-              <p className="text-foreground/60 font-poppins">Newcastle Location Map</p>
-            </div>
+            {/* Interactive Map */}
+            <RestaurantMap />
           </Card>
         </div>
 
