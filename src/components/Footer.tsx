@@ -16,7 +16,7 @@ const Footer = () => {
             />
             <p className="text-foreground/70 font-poppins leading-relaxed mb-4">
               Bringing you the authentic royal flavors of Hyderabad with 100% Halal certified dishes. 
-              Serving Sydney and Newcastle since 2019 with love, tradition, and premium taste.
+              Serving Newcastle since 2019 with love, tradition, and premium taste.
             </p>
             
             {/* Halal Badge */}
@@ -48,7 +48,6 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-mint mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-foreground/80">Sydney: 123 George Street</p>
                   <p className="text-foreground/80">Newcastle: 456 Hunter Street</p>
                 </div>
               </div>
@@ -56,8 +55,7 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-mint flex-shrink-0" />
                 <div>
-                  <p className="text-foreground/80">Sydney: (02) 1234 5678</p>
-                  <p className="text-foreground/80">Newcastle: (02) 1234 5679</p>
+                  <p className="text-foreground/80">Newcastle: +61 240746151</p>
                 </div>
               </div>
               
@@ -97,7 +95,7 @@ const Footer = () => {
             <div className="flex items-center gap-4 text-sm font-poppins">
               <span className="text-foreground/60">Serving since 2019</span>
               <span className="text-mint">🕌 Halal Certified</span>
-              <span className="text-saffron">📍 Sydney | Newcastle</span>
+              <span className="text-saffron">📍 Newcastle</span>
             </div>
           </div>
         </div>

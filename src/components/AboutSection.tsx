@@ -16,7 +16,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 shadow-card">
               <p className="text-lg md:text-xl leading-relaxed text-foreground/90 font-poppins">
-                At <span className="text-saffron font-semibold">IBR</span>, we bring you the rich, royal flavors of Hyderabad right to Sydney and Newcastle. With <span className="text-mint font-semibold">100% Halal-certified</span> dishes, our chefs combine tradition, authenticity, and premium taste.
+                At <span className="text-saffron font-semibold">IBR</span>, we bring you the rich, royal flavors of Hyderabad right to Newcastle. With <span className="text-mint font-semibold">100% Halal-certified</span> dishes, our chefs combine tradition, authenticity, and premium taste.
               </p>
             </Card>
 
