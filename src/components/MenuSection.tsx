@@ -1,73 +1,153 @@
 import { Card } from "@/components/ui/card";
 
+type MenuItem = { name: string; price?: string; description?: string };
+
 const MenuSection = () => {
-  const menuData = {
-    biryani: [
-      { name: "Chicken 65 Biryani", price: "$19.99", description: "Marinated chicken pieces in spices, served with raita and curry. Rating: 84% (1097 reviews)" },
-      { name: "Chicken Biryani", price: "$15.60", description: "Hyderabadi-style basmati rice with saffron, layered with chicken and gravy. Comes with raita and curry. Rating: 85% (149 reviews)" },
-      { name: "Bucket Chicken Biryani", price: "$105.00", description: "5L bucket (serves 6-7) with biryani salan, raita, and salad" },
-      { name: "Chicken 65 Bucket Biryani", price: "$118.00", description: "5L bucket (serves 6-7) with raita, salad, and salan. Rating: 85% (7 reviews)" },
-      { name: "Mutton Biryani", price: "$17.20", description: "Authentic Hyderabadi goat biryani with basmati rice, saffron, and spices. Comes with raita and curry" },
-      { name: "Goat Biryani Bucket", price: "$115.00", description: "5L bucket (serves 6-7) with salan and raita. Rating: 100% (5 reviews)" },
-      { name: "Paneer Vegetable Biryani", price: "$16.50", description: "Layered biryani with paneer, vegetables, and basmati rice" },
-      { name: "Vegetarian Biryani", price: "$14.00", description: "Spiced vegetable biryani with basmati rice. Rating: 83% (224 reviews)" },
-      { name: "Bucket Paneer Veg Biryani", price: "$110.00", description: "5L bucket (serves 6-7) with salan and raita" },
+  const menuData: Record<string, MenuItem[]> = {
+    biryanis: [
+      { name: "Chicken 65 Biryani" },
+      { name: "Paneer Vegetable Biryani" },
+      { name: "Chicken Biryani" },
+      { name: "Vegetarian Biryani" },
+      { name: "Mutton (Goat) Biryani" },
     ],
-    chicken: [
-      { name: "Butter Chicken", price: "$21.99", description: "Tandoori chicken in creamy tomato-cashew gravy. Rating: 86% (454 reviews)" },
-      { name: "Chilli Chicken", price: "$16.99", description: "Boneless chicken in pepper, capsicum, and soy sauce. Rating: 68% (156 reviews)" },
-      { name: "Chicken Tikka Masala", price: "$19.99", description: "Tandoori chicken in onion-capsicum gravy" },
-      { name: "Dum Ka Chicken", price: "$17.99", description: "Slow-cooked Hyderabadi chicken with yogurt and cashews. Rating: 77% (113 reviews)" },
+    chickenCurries: [
+      { name: "Butter Chicken" },
+      { name: "Chicken Tikka Masala" },
+      { name: "Dum Ka Chicken" },
+      { name: "Chicken Korma White" },
+      { name: "Mango Chicken Curry" },
+      { name: "Dum Ka Chicken (Whole)" },
+      { name: "Chicken Curry" },
+      { name: "Chicken Mughlai" },
+      { name: "Chicken Afghani" },
+      { name: "Chicken Masala" },
+      { name: "Palak Chicken (Saag)" },
+      { name: "Chicken Madras (Boneless)" },
+      { name: "Methi Malai Chicken" },
+      { name: "Chicken Handi" },
+      { name: "Achari Chicken" },
+      { name: "Spicy Green Chicken" },
+      { name: "Chicken Jalfrezi" },
     ],
-    goat: [
-      { name: "Mutton Curry", price: "$18.99", description: "Goat cooked in tomato-onion gravy. Rating: 67% (100 reviews)" },
-      { name: "Mutton Rogan Josh", price: "$18.99", description: "Goat in aromatic tomato-onion gravy. Rating: 76% (17 reviews)" },
-      { name: "Mutton Korma", price: "$18.99", description: "Mughlai-style goat curry with nuts and spices" },
+    muttonCurries: [
+      { name: "Mutton Curry" },
+      { name: "Mutton Jalfrezi" },
+      { name: "Mutton Rogan Josh" },
+      { name: "Mutton Masala" },
+      { name: "Palak Ghost (Goat)" },
+      { name: "Achari Mutton" },
+      { name: "Spicy Green Mutton (Goat)" },
+      { name: "Afghani Mutton" },
+      { name: "Mutton (Goat) Mughlai" },
+      { name: "Mutton Makhni" },
+      { name: "Mutton Vindaloo" },
+      { name: "Mutton Korma" },
+      { name: "Boneless Mutton Fry (Dry)" },
+      { name: "Mutton Handi" },
+      { name: "Methi Malai Mutton" },
     ],
-    veg: [
-      { name: "Shahi Paneer", price: "$17.99", description: "Paneer in creamy tomato-onion gravy. Rating: 66% (106 reviews)" },
-      { name: "Dal Makhani", price: "$15.99", description: "Black lentils cooked with cream. Rating: 78% (132 reviews)" },
-      { name: "Palak Paneer", price: "$17.99", description: "Paneer in spinach gravy. Rating: 71% (32 reviews)" },
+    vegetarianCurries: [
+      { name: "Dal Makhani" },
+      { name: "Shahi Paneer" },
+      { name: "Palak Paneer" },
+      { name: "Paneer Masala" },
+      { name: "Shahi Kaju Paneer Masala" },
+      { name: "Paneer Bhuna Masala" },
+      { name: "Matar Paneer" },
+      { name: "Aloo Bhuna Masala" },
+      { name: "Mixed Veggie Curry" },
+      { name: "Paneer Tikka Masala" },
+      { name: "Hyderabadi Dal" },
+      { name: "Butter Paneer" },
+      { name: "Aloo Bhindi Masala" },
+      { name: "Vegetable Korma" },
+      { name: "Dal Makhni with Rice" },
+      { name: "Kaju Paneer Masala" },
+      { name: "Dal Tadka" },
     ],
-    entrees: [
-      { name: "Chicken 65", price: "$16.99", description: "Deep-fried spicy chicken with curry leaves. Rating: 83% (220 reviews)" },
-      { name: "Tandoori Chicken (Half)", price: "$13.99", description: "Yogurt-marinated roasted chicken. Rating: 60% (20 reviews)" },
-      { name: "Chicken Lollipop (6pcs)", price: "$14.39", description: "Spiced tandoori chicken drumsticks. Rating: 67% (102 reviews)" },
-      { name: "Paneer 65", price: "$17.99", description: "Spicy fried cottage cheese. Rating: 77% (31 reviews)" },
-      { name: "Samosa (4pcs)", price: "$11.99", description: "Spiced potato-filled pastry. Rating: 90% (30 reviews)" },
+    entreesVeg: [
+      { name: "Paneer 65" },
+      { name: "Samosa with Chutney (4 pcs)" },
+      { name: "Chilli Paneer" },
+      { name: "Paneer 65 (Tadka)" },
+      { name: "Samosa with Chutney (2 pcs)" },
     ],
-    tandoor: [
-      { name: "Garlic Naan", price: "$4.50", description: "Tandoor-baked flatbread with garlic. Rating: 89% (480 reviews)" },
-      { name: "Butter Naan", price: "$3.99", description: "Classic naan with butter. Rating: 81% (260 reviews)" },
-      { name: "Zeera Rice", price: "$6.99", description: "Cumin-flavored basmati rice. Rating: 92% (96 reviews)" },
-      { name: "Biryani Masala Rice", price: "$10.99", description: "Spiced biryani rice. Rating: 83% (53 reviews)" },
+    entreesNonVeg: [
+      { name: "Maryland Tandoori Chicken – Half" },
+      { name: "Chicken 65" },
+      { name: "Chicken Tikka" },
+      { name: "Tandoori Chicken – Half" },
+      { name: "Chicken Lollipop (6 pcs)" },
+      { name: "Maryland Tandoori Chicken – Full" },
+      { name: "Tandoori Chicken – Full" },
+      { name: "Chilli Chicken" },
+      { name: "Chicken Maryland (1 piece)" },
+      { name: "Chicken Malai Tikka" },
+      { name: "Chicken Maryland Half" },
+      { name: "Chicken Wings Fry" },
+    ],
+    sideDishes: [
+      { name: "Chicken 65 Roll" },
+      { name: "Chicken Tikka Roll" },
+      { name: "Samosa with Chutney (4 pcs)" },
+      { name: "Samosa with Chutney (2 pcs)" },
+      { name: "Bucket Vegetable’s Biryani" },
+      { name: "Bucket Paneer Veg Biryani" },
+      { name: "Chicken 65 Bucket Biryani" },
+      { name: "Bucket Chicken Biryani" },
+      { name: "Pappadams (3 pcs)" },
+      { name: "Hyderabadi Dal with Rice" },
+      { name: "Hyderabadi Dal with Zeera Rice" },
+      { name: "Rumali Chicken 65 Roll" },
+      { name: "Rumali Shawarma Roll" },
+    ],
+    breads: [
+      { name: "Garlic Naan" },
+      { name: "Butter Naan" },
+      { name: "Plain Naan" },
+      { name: "Keema Naan" },
+      { name: "Cheese Keema Naan" },
+      { name: "Cheese Naan" },
+      { name: "Butter Roti (Tandoor)" },
+      { name: "Sweet Peshwari Naan" },
+      { name: "Cheese & Garlic Naan" },
+      { name: "Garlic Butter Roti (Tandoor)" },
+      { name: "Rumali Roti" },
+    ],
+    rice: [
+      { name: "Zeera Rice" },
+      { name: "Plain Rice" },
+      { name: "Cashew Rice" },
+    ],
+    indoChinese: [
+      { name: "Vegetable Manchurian Dry" },
+      { name: "Vegetable Manchurian – Gravy" },
+      { name: "Chicken Manchurian Dry" },
+      { name: "Chicken Manchurian – Gravy" },
     ],
     desserts: [
-      { name: "Gulab Jamun", price: "$5.99", description: "Milk-solid balls in sugar syrup. Rating: 67% (59 reviews)" },
-      { name: "Gajar ka Halwa", price: "$5.99", description: "Carrot pudding with dry fruits" },
-      { name: "Badam Kheer", price: "$5.99", description: "Almond milk pudding. Rating: 73% (56 reviews)" },
-    ],
-    beverages: [
-      { name: "Mango Lassi", price: "$4.79", description: "Yogurt-based mango drink" },
-      { name: "Coke Classic (375ml)", price: "$2.99", description: "Rating: 96% (50 reviews)" },
-      { name: "Bottled Water", price: "$2.50", description: "Pure drinking water" },
-    ],
-    deals: [
-      { name: "Chicken Biryani Deal", price: "$23.50", description: "Includes biryani, dessert, and drink. Rating: 80% (63 reviews)" },
-      { name: "Mutton Biryani Deal", price: "$24.50", description: "Includes biryani, dessert, and drink. Rating: 84% (46 reviews)" },
+      { name: "Shahi Tukda" },
+      { name: "Gajar Ka Halwa (Carrot)" },
+      { name: "IBR Special Pineapple Dessert" },
+      { name: "Badam (Almond) Kheer" },
+      { name: "Gulab Jamun" },
+      { name: "Meetha (Sweet) Paan" },
     ],
   };
 
   const categories = [
-    { id: "biryani", label: "Biryani Specials", icon: "🍛" },
-    { id: "chicken", label: "Chicken Curries", icon: "🍗" },
-    { id: "goat", label: "Mutton Curries", icon: "🍖" },
-    { id: "veg", label: "Veg Curries", icon: "🥘" },
-    { id: "entrees", label: "Tandoori & Entrées", icon: "🥟" },
-    { id: "tandoor", label: "Breads & Rice", icon: "🫓" },
+    { id: "biryanis", label: "Biryanis", icon: "🍛" },
+    { id: "chickenCurries", label: "Chicken Curries", icon: "🍗" },
+    { id: "muttonCurries", label: "Mutton Curries", icon: "🍖" },
+    { id: "vegetarianCurries", label: "Vegetarian Curries", icon: "🥗" },
+    { id: "entreesVeg", label: "Entrees – Vegetarian", icon: "🥟" },
+    { id: "entreesNonVeg", label: "Entrees – Non-Vegetarian", icon: "🍢" },
+    { id: "sideDishes", label: "Side Dishes", icon: "🍽️" },
+    { id: "breads", label: "Breads", icon: "🫓" },
+    { id: "rice", label: "Rice", icon: "🍚" },
+    { id: "indoChinese", label: "Indo-Chinese", icon: "🥡" },
     { id: "desserts", label: "Desserts", icon: "🍮" },
-    { id: "beverages", label: "Beverages", icon: "🥤" },
-    { id: "deals", label: "Special Deals", icon: "🎯" },
   ];
 
   return (
@@ -109,13 +189,17 @@ const MenuSection = () => {
                         <h3 className="font-poppins font-semibold text-foreground text-lg leading-tight">
                           {item.name}
                         </h3>
-                        <span className="bg-gradient-saffron text-background font-bold text-lg px-3 py-1 rounded-full shadow-lg ml-2 flex-shrink-0">
-                          {item.price}
-                        </span>
+                        {item.price && (
+                          <span className="bg-gradient-saffron text-background font-bold text-lg px-3 py-1 rounded-full shadow-lg ml-2 flex-shrink-0">
+                            {item.price}
+                          </span>
+                        )}
                       </div>
-                      <p className="text-foreground/70 text-sm font-poppins leading-relaxed">
-                        {item.description}
-                      </p>
+                      {item.description && (
+                        <p className="text-foreground/70 text-sm font-poppins leading-relaxed">
+                          {item.description}
+                        </p>
+                      )}
                     </div>
                   </Card>
                 ))}
