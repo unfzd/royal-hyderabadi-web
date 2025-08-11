@@ -64,9 +64,8 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-playfair font-bold text-2xl text-saffron mb-2">Newcastle</h3>
                 <p className="text-foreground/80 font-poppins leading-relaxed">
-                  456 Hunter Street<br />
-                  Newcastle NSW 2300<br />
-                  Australia
+                  551D Hunter Street<br />
+                  Newcastle West 2302
                 </p>
               </div>
             </div>

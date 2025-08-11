@@ -48,20 +48,20 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-mint mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-foreground/80">Newcastle: 456 Hunter Street</p>
+                  <p className="text-foreground/80">Newcastle: 551D Hunter Street Newcastle West 2302</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-mint flex-shrink-0" />
                 <div>
-                  <p className="text-foreground/80">Newcastle: +61 240746151</p>
+                  <p className="text-foreground/80">Newcastle: 02 40746151</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-mint flex-shrink-0" />
-                <p className="text-foreground/80">info@ibrrestaurant.com.au</p>
+                <p className="text-foreground/80">newcastle@gmail.com</p>
               </div>
             </div>
           </div>
