@@ -5,7 +5,7 @@ import RestaurantMap from "./RestaurantMap";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-20 px-4 bg-muted/30 animate-fade-in">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text mb-6">
@@ -18,7 +18,7 @@ const ContactSection = () => {
         </div>
 
         {/* Quick Order Buttons */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-16 animate-fade-in">
           <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow">
             <div className="text-center">
               <Phone className="w-12 h-12 text-mint mx-auto mb-4" />

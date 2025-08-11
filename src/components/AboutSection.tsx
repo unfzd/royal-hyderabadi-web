@@ -2,9 +2,9 @@ import { Card } from "@/components/ui/card";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-background">
+    <section id="about" className="py-20 px-4 bg-background animate-fade-in">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text mb-6">
             About IBR
           </h2>

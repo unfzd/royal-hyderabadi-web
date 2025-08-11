@@ -3,7 +3,7 @@ import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-background border-t border-primary/20 py-12 px-4">
+    <footer className="bg-background border-t border-primary/20 py-12 px-4 animate-fade-in">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-4 gap-8 mb-8">

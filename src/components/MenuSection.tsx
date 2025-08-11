@@ -153,7 +153,7 @@ const MenuSection = () => {
   return (
     <section id="menu" className="py-20 px-4 bg-muted/30">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text mb-6">
             Our Menu
           </h2>
@@ -164,8 +164,8 @@ const MenuSection = () => {
         </div>
 
         <div className="space-y-16">
-          {categories.map((category) => (
-            <div key={category.id} className="space-y-8">
+          {categories.map((category, idx) => (
+            <div key={category.id} className="space-y-8 animate-fade-in" style={{ animationDelay: `${idx * 0.08}s` }}>
               <div className="text-center">
                 <h3 className="text-3xl md:text-4xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text mb-2 flex items-center justify-center gap-3">
                   <span className="text-4xl">{category.icon}</span>
@@ -178,8 +178,8 @@ const MenuSection = () => {
                 {menuData[category.id as keyof typeof menuData]?.map((item, index) => (
                   <Card 
                     key={index} 
-                    className="relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow hover:scale-[1.02] group"
-                  >
+                    className="relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow hover:scale-[1.02] group animate-fade-in"
+                    style={{ animationDelay: `${index * 0.04}s` }}>
                     {/* Gradient Background */}
                     <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-spice-orange/10 opacity-50"></div>
                     

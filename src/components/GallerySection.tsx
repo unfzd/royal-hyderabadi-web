@@ -40,7 +40,7 @@ const GallerySection = () => {
   return (
     <section id="gallery" className="py-20 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-transparent bg-gradient-saffron bg-clip-text mb-6">
             Food Gallery
           </h2>
@@ -54,8 +54,8 @@ const GallerySection = () => {
           {galleryItems.map((item, index) => (
             <Card 
               key={index}
-              className="group overflow-hidden bg-card/30 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-card hover:scale-[1.02]"
-            >
+              className="group overflow-hidden bg-card/30 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-card hover:scale-[1.02] animate-fade-in"
+              style={{ animationDelay: `${index * 0.06}s` }}>
               <div className="relative overflow-hidden">
                 <img
                   src={item.image}
@@ -77,7 +77,7 @@ const GallerySection = () => {
         </div>
 
         {/* Featured Dishes Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 animate-fade-in">
           <Card className="p-6 text-center bg-card/20 backdrop-blur-sm border-saffron/20">
             <div className="text-3xl mb-2">🍛</div>
             <h3 className="font-poppins font-bold text-saffron text-2xl">15+</h3>
