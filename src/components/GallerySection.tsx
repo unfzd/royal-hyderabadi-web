@@ -6,34 +6,34 @@ import breads from "@/assets/breads.jpg";
 const GallerySection = () => {
   const galleryItems = [
     {
-      image: "/lovable-uploads/fdb18bab-5c2f-4fc3-aecb-88761acedb1c.png",
-      title: "Tandoori Delights",
-      description: "Fresh naan and chicken tikka with authentic spices"
+      image: "/lovable-uploads/84640201-04a2-4a12-9756-90d081349ce3.png",
+      title: "Authentic Indian Feast",
+      description: "Variety of curries, tandoori items, and rice dishes"
     },
     {
-      image: "/lovable-uploads/c80a857c-516f-4492-a49b-7ad76009bf29.png",
-      title: "Signature Chicken Biryani",
-      description: "Aromatic basmati rice with tender chicken pieces"
+      image: "/lovable-uploads/c725d769-106b-443c-bc38-e4a1a045a467.png",
+      title: "Hyderabadi Chicken Biryani",
+      description: "Fragrant basmati rice layered with tender marinated chicken"
     },
     {
-      image: "/lovable-uploads/a066fb6c-ae74-4e14-83ae-a4a85ac655de.png",
-      title: "Complete Indian Feast",
-      description: "Biryani, curry, and tandoori specialties"
+      image: "/lovable-uploads/b4d9b760-c29e-4774-a1c1-66a0f5bab5d1.png",
+      title: "Butter Chicken Special",
+      description: "Creamy tomato-based curry with succulent chicken pieces"
     },
     {
-      image: "/lovable-uploads/940a82a1-0966-4bd0-b254-9894d6e15f81.png",
-      title: "Traditional Curry",
-      description: "Rich, flavorful curry made with authentic spices"
+      image: "/lovable-uploads/9a4b56e1-bd06-430d-84a2-8b01835d2352.png",
+      title: "Chicken 65 Biryani",
+      description: "Spicy Chicken 65 layered with aromatic saffron rice"
     },
     {
-      image: "/lovable-uploads/14a0b7d5-7f02-4c5c-85a1-2b21bfa77d53.png",
-      title: "Chicken 65 Special",
-      description: "Spicy deep-fried chicken with curry leaves"
+      image: "/lovable-uploads/138b062e-894a-48ee-bdcd-6137e0867d07.png",
+      title: "Famous Chicken 65",
+      description: "Deep-fried boneless chicken in tangy South Indian spices"
     },
     {
-      image: "/lovable-uploads/e010e28a-23f3-4b8a-b1fc-3f9904dcefc3.png",
-      title: "Royal Dining Experience",
-      description: "Complete meal with biryani, curry, and fresh bread"
+      image: "/lovable-uploads/791af72a-8185-4d43-b989-c2ccb55c83ed.png",
+      title: "Tandoori Chicken",
+      description: "Clay oven roasted chicken with smoky flavors and spices"
     }
   ];
 
