@@ -70,14 +70,18 @@ const Footer = () => {
         {/* Social Media */}
         <div className="flex justify-center gap-6 mb-8">
           <a 
-            href="#" 
+            href="https://www.instagram.com/ibr_newcastle/?hl=en" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-12 h-12 bg-card/30 backdrop-blur-sm border border-primary/20 rounded-full flex items-center justify-center hover:border-saffron/50 hover:bg-saffron/10 transition-all duration-300"
             aria-label="Instagram"
           >
             <Instagram className="w-5 h-5 text-saffron" />
           </a>
           <a 
-            href="#" 
+            href="https://www.facebook.com/Ibrnewcastle?mibextid=wwXIfr&rdid=m8bXxTFR2HWdhZ2o&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19xPAYU65Q%2F%3Fmibextid%3DwwXIfr#" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-12 h-12 bg-card/30 backdrop-blur-sm border border-primary/20 rounded-full flex items-center justify-center hover:border-saffron/50 hover:bg-saffron/10 transition-all duration-300"
             aria-label="Facebook"
           >
