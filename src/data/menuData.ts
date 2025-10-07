@@ -63,7 +63,6 @@ export const menuData: MenuCategory[] = [
     items: [
       { name: "Butter Chicken", price: "$22", description: "Tandoori chicken in rich, creamy tomato-cashew gravy with mild spices." },
       { name: "Chicken Tikka Masala", price: "$20", description: "Tandoori chicken cubes in onion-capsicum gravy with aromatic spices." },
-      { name: "Dum Ka Chicken", price: "$18", description: "Slow-cooked Hyderabadi chicken in spiced yogurt-cashew gravy." },
       { name: "Chicken Korma White", price: "$18", description: "Mughlai-style chicken in creamy white cashew gravy." },
       { name: "Mango Chicken Curry", price: "$18", description: "Boneless chicken in sweet-spicy mango-infused curry." },
       { name: "Chicken Curry", price: "$18", description: "Classic chicken in onion-tomato base with Indian spices." },
@@ -153,7 +152,6 @@ export const menuData: MenuCategory[] = [
           { name: "Keema Naan", price: "$5", description: "Naan stuffed with spiced tandoori chicken mince." },
           { name: "Cheese Keema Naan", price: "$5", description: "Naan stuffed with chicken mince and cheese." },
           { name: "Cheese Naan", price: "$5", description: "Naan stuffed with cheese and baked in tandoor." },
-          { name: "Sweet Peshwari Naan", price: "$6", description: "Naan stuffed with coconut, sugar, and dry fruits." },
           { name: "Cheese & Garlic Naan", price: "$5", description: "Naan stuffed with cheese and garlic." },
           { name: "Cheese & Chilli Naan", price: "$4.50", description: "Naan stuffed with cheese and green chilli." },
         ]
@@ -219,7 +217,6 @@ export const menuData: MenuCategory[] = [
       { name: "IBR Special Pineapple Dessert", price: "$6", description: "Pineapple pudding topped with strawberry jelly." },
       { name: "Badam Kheer", price: "$6", description: "Almond-based Indian pudding with saffron & cardamom." },
       { name: "Gulab Jamun (3 pcs)", price: "$6", description: "Soft milk-solid dumplings in sugar syrup." },
-      { name: "Qubani Ka Mittha", price: "$6", description: "Dessert made from dried apricots, sugar, and nuts." },
       { name: "Mango Malai", price: "$6", description: "Milk-solid dumplings infused with mango flavour, in creamy syrup." },
     ]
   },
@@ -247,14 +244,6 @@ export const menuData: MenuCategory[] = [
     ]
   },
   {
-    id: "seafood",
-    label: "Seafood",
-    icon: "🐟",
-    items: [
-      { name: "Fish Fry (4 pcs)", price: "$16", description: "Boneless basa fish fillets marinated in spices, fried golden." },
-    ]
-  },
-  {
     id: "deals",
     label: "Deals",
     icon: "🍱",
@@ -277,9 +266,9 @@ export const menuData: MenuCategory[] = [
     label: "Weekend Specials",
     icon: "🍴",
     items: [
-      { name: "Chicken Mandi", price: "$20", description: "Traditional Arabian style rice with roasted chicken." },
+      { name: "Chicken Mandi", price: "$25", description: "Traditional Arabian style rice with roasted chicken." },
       { name: "Haleem", price: "$20", description: "Royal delicacy of wheat, lentils, and meat slow-cooked to a paste." },
-      { name: "Mutton Mandi", price: "$20", description: "Arabian rice with slow-cooked succulent mutton." },
+      { name: "Mutton Mandi", price: "$25", description: "Arabian rice with slow-cooked succulent mutton." },
     ]
   },
 ];
