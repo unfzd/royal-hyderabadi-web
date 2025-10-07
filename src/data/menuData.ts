@@ -240,7 +240,6 @@ export const menuData: MenuCategory[] = [
       { name: "Garlic Chicken Wrap", price: "$13", description: "Garlic-spiced chicken with veggies and mayo in naan/rumali wrap. Available in Naan or Rumali Roti." },
       { name: "Chicken Tikka Wrap", price: "$13", description: "Tandoori chicken tikka with cucumber, onion, capsicum, mayo, and chilli. Available in Naan or Rumali Roti." },
       { name: "Butter Chicken Wrap", price: "$13", description: "Butter chicken with creamy sauce, veggies, and mayo in soft naan/rumali. Available in Naan or Rumali Roti." },
-      { name: "Kafta Wrap", price: "$13", description: "Spiced kafta with crisp veggies, mayo, chilli, and tangy sauce in naan/rumali. Available in Naan or Rumali Roti." },
     ]
   },
   {
@@ -267,7 +266,7 @@ export const menuData: MenuCategory[] = [
     icon: "🍴",
     items: [
       { name: "Chicken Mandi", price: "$25", description: "Traditional Arabian style rice with roasted chicken." },
-      { name: "Haleem", price: "$20", description: "Royal delicacy of wheat, lentils, and meat slow-cooked to a paste." },
+      { name: "Haleem (Subject to Availability)", price: "$20", description: "Royal delicacy of wheat, lentils, and meat slow-cooked to a paste." },
       { name: "Mutton Mandi", price: "$25", description: "Arabian rice with slow-cooked succulent mutton." },
     ]
   },
