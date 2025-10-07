@@ -39,8 +39,6 @@ export const menuData: MenuCategory[] = [
           { name: "Chilli Chicken", price: "$17", description: "Boneless chicken stir-fried with capsicum, onion, and a hot garlic-soy chilli sauce." },
           { name: "Chicken Maryland (1 pc)", price: "$8", description: "Single piece of Maryland chicken." },
           { name: "Chicken Maryland (Half)", price: "$14", description: "Half portion of Maryland chicken." },
-          { name: "Chicken Malai Tikka", price: "$19", description: "Creamy, mildly spiced chicken kebabs roasted till soft and juicy." },
-          { name: "Chicken Wings Fry (6 pcs)", price: "$18", description: "Crispy spiced wings fried golden, locking in juicy flavour inside." },
           { name: "Butter Garlic Chicken", price: "$20", description: "Boneless tender chicken cooked in butter, garlic, and aromatic Indian spices." },
         ]
       }
@@ -100,7 +98,6 @@ export const menuData: MenuCategory[] = [
       { name: "Mutton Makhni", price: "$19", description: "Marinated goat in buttery, mildly spiced creamy gravy." },
       { name: "Mutton Vindaloo", price: "$20", description: "Goat cooked in spicy, tangy Goan vindaloo gravy." },
       { name: "Mutton Korma", price: "$20", description: "Mughlai-style goat in creamy cashew gravy." },
-      { name: "Boneless Mutton Fry (Dry, 500ml)", price: "$16", description: "Boneless goat pieces fried crisp with bold spices." },
       { name: "Mutton Handi", price: "$20", description: "Clay pot–cooked mutton in rich onion-yogurt gravy." },
       { name: "Methi Malai Mutton", price: "$20", description: "Creamy mutton with fenugreek leaves and mild spices." },
       { name: "Mutton Kadhai", price: "$18", description: "Goat cooked with onion, tomato, and kadhai masala." },
@@ -113,17 +110,17 @@ export const menuData: MenuCategory[] = [
     items: [
       { name: "Dal Makhani", price: "$18", description: "Creamy black lentils slow-cooked with butter, cream, and spices." },
       { name: "Shahi Paneer", price: "$19", description: "Paneer cubes in rich, creamy tomato-cashew gravy." },
-      { name: "Palak Paneer", price: "$19", description: "Spinach gravy with paneer, seasoned with Indian spices." },
       { name: "Methi Malai Paneer", price: "$19", description: "Paneer in onion-tomato gravy with fenugreek and cream." },
+      { name: "Malai Paneer", price: "$19", description: "Paneer in creamy, mildly spiced gravy with cashews." },
       { name: "Shahi Kaju Paneer Masala", price: "$20", description: "Paneer and cashews in creamy shahi masala." },
       { name: "Paneer Bhuna Masala", price: "$18", description: "Paneer with onion-capsicum in spiced gravy." },
       { name: "Matar Paneer", price: "$16", description: "Paneer and peas in tomato-onion gravy with cream." },
-      { name: "Aloo Bhuna Masala", price: "$18", description: "Potatoes stir-fried with onion, capsicum, and spices." },
+      { name: "Bhuna Masala", price: "$18", description: "Onion and capsicum stir-fried with spices." },
       { name: "Mixed Veggie Curry", price: "$19", description: "Seasonal vegetables in yogurt-based nutty curry." },
       { name: "Paneer Tikka Masala", price: "$15", description: "Grilled paneer in onion-capsicum masala." },
       { name: "Hyderabadi Dal", price: "$19", description: "Yellow lentils with tamarind, onion, and coriander." },
       { name: "Butter Paneer", price: "$19", description: "Paneer in buttery tomato-cashew gravy (mild & sweet)." },
-      { name: "Aloo Bhindi Masala", price: "$19", description: "Potato and okra in tangy tomato-onion masala." },
+      { name: "Bhindi Masala", price: "$19", description: "Okra in tangy tomato-onion masala." },
       { name: "Vegetable Korma", price: "$18", description: "Mixed vegetables in creamy coconut-cashew curry." },
       { name: "Kaju Paneer Masala", price: "$20", description: "Paneer and cashews in spiced tomato-onion gravy." },
       { name: "Dal Tadka", price: "$17", description: "Yellow lentils tempered with ghee, garlic, and spices." },
@@ -283,7 +280,6 @@ export const menuData: MenuCategory[] = [
       { name: "Chicken Mandi", price: "$20", description: "Traditional Arabian style rice with roasted chicken." },
       { name: "Haleem", price: "$20", description: "Royal delicacy of wheat, lentils, and meat slow-cooked to a paste." },
       { name: "Mutton Mandi", price: "$20", description: "Arabian rice with slow-cooked succulent mutton." },
-      { name: "Mutton Marag", price: "$20", description: "Hyderabadi mutton soup, mildly spiced and aromatic." },
     ]
   },
 ];
